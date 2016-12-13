@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ARKEP</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/font-awesome/css/font-awesome.min.css')}}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/form-elements.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/media-queries.css')}}">
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url_for('static', filename='assets/ico/apple-touch-icon-144-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url_for('static', filename='assets/ico/apple-touch-icon-114-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url_for('static', filename='assets/ico/apple-touch-icon-72-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" href="{{ url_for('static', filename='assets/ico/apple-touch-icon-57-precomposed.png')}}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+    </head>
+
+    <body>
+<script>
+$(document).ready(function (){
+$('.emri_nder').change(function(){
+console.log("Ju kenishtypur:");
+ var vlera = $(this).val();
+ if(vlera.length < 6) {
+alert('KEni gabuar.')
+$(this).focus();
+}
+});
+
+});
+</script>
+
+
+        <!-- Description -->
+		<div class="description-container">
+	        <div class="container">
+	        	<div class="row">
+	                <div class="col-sm-12 description-title">
+	                    <h2>ARKEP</h2>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-sm-12 description-text">
+	                    <strong>
+	                    	Autoriteti Rregullativ i Komunikimeve Elektronike dhe Postare
+	                    </strong>
+	                    <div class="divider-1">. . . . . . . . . . . . . . . .</div>
+	                </div>
+	            </div>
+			</div>
+		</div>
+
+		<!-- Multi Step Form -->
+		<div class="msf-container">
+	        <div class="container">
+	        	<div class="row">
+	                <div class="col-sm-12 msf-title">
+	                    <h4>FORMULAR I NJOFTIMIT
+për
+Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
+	                    <p></p>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-sm-12 msf-form">
+
+	                    <form role="form" action="" method="post" class="form-inline">
+
+	                    	<fieldset>
+	            				<h4>Qellimi i njoftimit <span class="step">(Hapi 1 / 7)</span></h4>
+	            				<div class="radio-buttons-1">
+				                	<p>Ju lutem, zgjedhni qellimin e njoftimit:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-1-options" value="fillimi_i_sherbimit"> Fillimi i sherbimit
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-1-options" value="shtim_sherbimi"> Shtim sherbimi
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-1-options" value="heqje_sherbimi"> Heqje sherbimi
+					                </label><br>
+
+								</div>
+	            				<br>
+	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+	            			</fieldset>
+
+	            			<fieldset>
+	            				<h4>Te dhenat per ndermarresin <span class="step">(Hapi 2 / 7)</span></h4>
+	            				<div class="form-group">
+				                    <label for="emri_nder">Emri i Ndërmarrësit (Entiteti):</label><br>
+				                    <input type="text" name="emri_nder" class="emri_nder form-control" id="emri_nder">
+				                </div><br>
+				                <div class="form-group">
+				                    <label for="nr_biz">Numri i Regjistrimit të Biznesit:</label><br>
+				                    <input type="text" name="nr_biz" class="nr_biz form-control" id="nr_biz">
+				                </div><br>
+				                <div class="form-group">
+				                    <label for="nr_fiskal">Numri fiskal:</label><br>
+				                    <input type="text" name="nr_fiskal" class="nr_fiskal form-control" id="nr_fiskal">
+				                </div><br>
+				                <div class="form-group">
+				                    <label for="adresa">Adresa:</label><br>
+				                    <input type="text" name="adresa" class="adresa form-control" id="adresa">
+				                </div><br>
+                                <div class="form-group" >
+				                    <label for="nr_tel">Numri i Telefonit:</label><br>
+				                    <input type="text" name="nr_tel" class="nr_tel form-control" id="nr_tel">
+				                </div><br>
+                                <div class="form-group ">
+				                    <label for="nr_fax">Numri i Faksit:</label><br>
+				                    <input type="text" name="nr_fax" class="nr_fax form-control" id="nr_fax" >
+				                </div><br>
+                                 <div class="form-group">
+				                    <label for="email">Email:</label><br>
+				                    <input type="text" name="email" class="email form-control" id="email">
+				                </div>
+	            				<br>
+	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
+	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+	            			</fieldset>
+
+	            			<fieldset>
+	            				<h4>TË DHËNAT PËR ZYRTARIN LIGJËRISHT TË PËRGJEGJËSHËM <span class="step">(Hapi 3 / 7)</span></h4>
+	            				<div class="form-group">
+				                    <label for="emri_zyrtarit">Emri i zyrtarit:</label><br>
+				                    <input type="text" name="emri_zyrtarit" class="emri_zyrtarit form-control" id="emri_zyrtarit">
+				                </div>
+				                <div class="form-group">
+				                    <label for="adresa_zyrtarit">Adresa:</label><br>
+				                    <input type="text" name="adresa_zyrtarit" class="adresa_zyrtarit form-control" id="adresa_zyrtarit">
+				                </div>
+				                <div class="form-group">
+				                    <label for="nr_tel_zyrtarit">Numri i Telefonit:</label><br>
+				                    <input type="text" name="nr_tel_zyrtarit" class="nr_tel_zyrtarit form-control" id="nr_tel_zyrtarit">
+				                </div>
+				                <div class="form-group">
+				                    <label for="nr_fax_zyrtarit">Numri i Faksit:</label><br>
+				                    <input type="text" name="nr_fax_zyrtarit" class="nr_fax_zyrtarit form-control" id="nr_fax_zyrtarit">
+				                </div>
+				                <div class="form-group">
+				                    <label for="email_zyrtarit">E-mail adresa:</label><br>
+				                    <input type="text" name="email_zyrtarit" class="email_zyrtarit form-control" id="email_zyrtarit">
+				                </div>
+				                <div class="form-group">
+				                    <label for="nr_id">Numri i ID:</label><br>
+				                    <input type="text" name="nr_id" class="nr_id form-control" id="nr_id">
+				                </div>
+
+	            				<br>
+	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
+	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+	            			</fieldset>
+
+	                    	<fieldset>
+	            				<h4> AKTIVITETET TË CILAT NJOFTOHEN/CREGJISTROHEN: <span class="step">(Hapi 4 / 7)</span></h4>
+	            				<div class="radio-buttons-2">
+				                	<p>Ofrimi i rrjetit publik fiks:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-2-options" value="lokal" onclick="javascript:yesnoCheck();" id="noCheck"> Lokal
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-2-options" value="nacional" onclick="javascript:yesnoCheck();"  id="noCheck"> Nacional
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio"  name="radio-buttons-2-options" value="tjera_rrjet_fiks" onclick="javascript:yesnoCheck();" id="yesCheck"> Tjera
+
+					                </label>
+                                     <div id="ifYes" style="visibility:hidden">
+                                    If yes, explain: <input type='text' id='yes' name='yes'><br>
+
+                                    </div>
+
+								</div>
+
+                                <div class="radio-buttons-2">
+				                	<p>Ofrimi i shërbimeve publike fikse:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-3-options" value="tel_lokal" onclick="javascript:yesnoCheck2();" id="noCheck2"> Shërbime telefonike lokale/nacionale
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-3-options" value="tel_nderkombetar" onclick="javascript:yesnoCheck2();"  id="noCheck2"> Shërbime telefonike ndërkombëtare
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio"  name="radio-buttons-3-options" value="tel_publik_pagese" onclick="javascript:yesnoCheck2();" id="noCheck2"> Telefona publik me pagesë
+
+					                </label><br>
+                                    <label class="radio-inline">
+					                	<input type="radio"  name="radio-buttons-3-options" value="sherb_tjera" onclick="javascript:yesnoCheck2();" id="yesCheck2"> Shërbime tjera
+
+					                </label>
+                                     <div id="ifYes2" style="visibility:hidden">
+                                    If yes, explain: <input type='text' id='yes' name='yes'><br>
+
+                                    </div>
+                                </div>
+                                     <br>
+                                <div class="radio-buttons-2">
+				                	<p>Ofrimi i rrjetit publik mobil:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-4-options" value="mob_lokal" > Lokal
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-4-options" value="mob_nac"> Nacional
+					                </label>
+								</div>
+                                    <br>
+                                    <div class="radio-buttons-2">
+				                	<p>Ofrimi i shërbimeve publike mobile:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-5-options" value="tel_ze" > Shërbime telefonike të zërit
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-5-options" value="trans_dhena"> Transmetim të dhënash
+					                </label>
+								</div>
+
+                                    <div class="radio-buttons-2">
+				                	<p>Ofrimi i shërbimeve të linjave me qira:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-6-options" value="fiber_optik" > Fibër optik të pa-ndriçuar
+					                </label><br>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-6-options" value="linja_qera"> Linja tjera me qira
+					                </label>
+								</div>
+                                    <br>
+                                    <div class="radio-buttons-2">
+				                	<p>Ofrimi i rrjetave publike me transmetim satelitor:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-7-options" value="trans_satelit" > Ofrimi i rrjetave publike me transmetim satelitor
+					                </label>
+
+								</div>
+	            				<br>
+	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
+	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+
+                            </fieldset>
+
+
+	            			<fieldset>
+	            				<h4>Përshkrimi i rrjetit dhe/ose shërbimit që do të
+                                    ofrohet: <span class="step">(Hapi 5 / 7)</span></h4>
+	            				<div class="form-group">
+                                    <div class="col-sm-6" >
+									<label for="about-you">Të jepen përshkrime të detajuara për secilin
+                                        aktivitet të njoftuar duke specifikuar:</label><br>
+				                    <label>
+                                       ● A do të përdoret rrjeti vetanak apo
+                                        ndonjë rrjet tjetër, <br>
+                                        ● Teknologjia e cila do të përdoret,<br>
+                                        ● Radio frekuencat, të cilat planifikohen
+                                        të përdoren<br>
+                                        ● Lista e shërbimeve që planifikohen të
+                                        ofrohen,<br>
+                                        ● Etj
+                                        </label>
+                                    </div>
+                                   <div class="col-sm-6" >
+									<label for="about-you"></label><br>
+				                    <textarea name="about-you" class="about-you form-control" id="about-you"></textarea>
+                                    </div>
+				                </div>
+	            				<!--<br>
+	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
+	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>-->
+
+                                <br>
+	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
+	            				<button type="submit" class="btn">Submit</button>
+	            			</fieldset>
+
+                            <!--
+
+
+	            			<fieldset>
+	            				<h4>Why You Want To Join <span class="step">(Hapi 6 / 7)</span></h4>
+	            				<div class="form-group">
+									<label for="why-join">Tell us why you want to join our application:</label><br>
+				                    <textarea name="why-join" class="why-join form-control" id="why-join"></textarea>
+				                </div>
+	            				<br>
+	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
+	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+	            			</fieldset>
+
+	            			<fieldset>
+	            				<h4>Other Form Elements <span class="step">(Step 7 / 7)</span></h4>
+				                <div class="radio-buttons-8">
+				                	<p>Radio Buttons 1:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-1-options" value="radio-buttons-1-option-1"> Option 1
+					                </label>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-1-options" value="radio-buttons-1-option-2"> Option 2
+					                </label>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-1-options" value="radio-buttons-1-option-3"> Option 3
+					                </label>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-1-options" value="radio-buttons-1-option-4"> Option 4
+					                </label>
+								</div>
+				                <div class="radio-buttons-9">
+									<p>Radio Buttons 2:</p>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-2-options" value="radio-buttons-2-option-1"> Option 1
+					                </label>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-2-options" value="radio-buttons-2-option-2"> Option 2
+					                </label>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-2-options" value="radio-buttons-2-option-3"> Option 3
+					                </label>
+					                <label class="radio-inline">
+					                	<input type="radio" name="radio-buttons-2-options" value="radio-buttons-2-option-4"> Option 4
+					                </label>
+								</div>
+	            				<br>
+	            				<div class="checkboxes-1">
+	            					<p>Checkboxes 1:</p>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-1-options" value="checkboxes-1-option-1"> Option 1
+					                </label>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-1-options" value="checkboxes-1-option-2"> Option 2
+					                </label>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-1-options" value="checkboxes-1-option-3"> Option 3
+					                </label>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-1-options" value="checkboxes-1-option-4"> Option 4
+					                </label>
+								</div>
+								<div class="checkboxes-2">
+	            					<p>Checkboxes 2:</p>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-2-options" value="checkboxes-2-option-1"> Option 1
+					                </label>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-2-options" value="checkboxes-2-option-2"> Option 2
+					                </label>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-2-options" value="checkboxes-2-option-3"> Option 3
+					                </label>
+					                <label class="checkbox-inline">
+					                	<input type="checkbox" name="checkboxes-2-options" value="checkboxes-2-option-4"> Option 4
+					                </label>
+								</div>
+	            				<br>
+	            				<div class="selects-1">
+									<p>Select 1:</p>
+					                <select class="form-control" name="select-1">
+					                	<option value="1">Option 1</option>
+					                	<option value="2">Option 2</option>
+					                	<option value="3">Option 3</option>
+					                	<option value="4">Option 4</option>
+					                </select>
+								</div>
+								<div class="selects-2">
+									<p>Select 2:</p>
+					                <select class="form-control" name="select-2">
+					                	<option value="1">Option 1</option>
+					                	<option value="2">Option 2</option>
+					                	<option value="3">Option 3</option>
+					                	<option value="4">Option 4</option>
+					                </select>
+								</div>
+	            				<br>
+	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
+	            				<button type="submit" class="btn">Submit</button>
+	            			</fieldset>
+
+                            -->
+
+	                    </form>
+
+	                </div>
+	            </div>
+			</div>
+		</div>
+
+        <!-- Javascript -->
+        <script src="{{ url_for('static', filename='assets/js/jquery-1.11.1.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/js/jquery.backstretch.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/js/scripts.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/js/script.js')}}"></script>
+
+    </body>
+
+</html>

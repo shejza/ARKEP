@@ -1,0 +1,7 @@
+.form-inline .form-control {
+    display: inline-block;
+    width: 65%;
+    vertical-align: middle;
+    margin-top: 3%;
+    height: 80%;
+}

@@ -10,10 +10,12 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+        
         <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap2.min.css')}}">
         <link rel="stylesheet" href="{{ url_for('static', filename='assets/font-awesome/css/font-awesome.min.css')}}">
 		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/form-elements.css')}}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style7.css')}}">
         <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/media-queries.css')}}">
 
         <!-- Favicon and touch icons -->
@@ -22,40 +24,26 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url_for('static', filename='assets/ico/apple-touch-icon-114-precomposed.png')}}">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url_for('static', filename='assets/ico/apple-touch-icon-72-precomposed.png')}}">
         <link rel="apple-touch-icon-precomposed" href="{{ url_for('static', filename='assets/ico/apple-touch-icon-57-precomposed.png')}}">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+
     </head>
 
     <body>
-<script>
-$(document).ready(function (){
-$('.emri_nder').change(function(){
-console.log("Ju kenishtypur:");
- var vlera = $(this).val();
- if(vlera.length < 6) {
-alert('Hahhahah Keni gabuar.')
-$(this).focus();
-}
-});
-
-});
-</script>
 
 
         <!-- Description -->
 		<div class="description-container">
 	        <div class="container">
 	        	<div class="row">
-	                <div class="col-sm-12 description-title">
-	                    <h2>ARKEP</h2>
-	                </div>
+	             
 	            </div>
 	            <div class="row">
-	                <div class="col-sm-12 description-text">
-	                    <strong>
+	                
+<img src="static/assets/img/logoja.png" alt="logoja" width="200" height="150">
+	                  <div class="col-md-12 description-text">
+	                   <strong style="position: absolute;bottom: 150px;left: 33%;">
 	                    	Autoriteti Rregullativ i Komunikimeve Elektronike dhe Postare
-	                    </strong>
-	                    <div class="divider-1">. . . . . . . . . . . . . . . .</div>
-	                </div>
+
+	                    </strong></div>
 	            </div>
 			</div>
 		</div>
@@ -63,21 +51,17 @@ $(this).focus();
 		<!-- Multi Step Form -->
 		<div class="msf-container">
 	        <div class="container">
-	        	<div class="row">
-	                <div class="col-sm-12 msf-title">
-	                    <h4>FORMULAR I NJOFTIMIT
-për
-Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
-	                    <p></p>
-	                </div>
-	            </div>
+	        
 	            <div class="row">
 	                <div class="col-sm-12 msf-form">
 
 	                    <form role="form" action="" method="post" class="form-inline">
 
-	                    	<fieldset>
-	            				<h4>Qellimi i njoftimit <span class="step">(Hapi 1 / 7)</span></h4>
+
+   <div class="fusha">
+
+	                    	<fieldset >
+	            				<h4>Qellimi i njoftimit <span class="step">(Hapi 1 / 5)</span></h4>
 	            				<div class="radio-buttons-1">
 				                	<p>Ju lutem, zgjedhni qellimin e njoftimit:</p>
 					                <label class="radio-inline">
@@ -88,84 +72,149 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
 					                </label><br>
 					                <label class="radio-inline">
 					                	<input type="radio" name="radio-buttons-1-options" value="heqje_sherbimi"> Heqje sherbimi
-					                </label><br>
-
-								</div>
+					                </lab
+</div>
 	            				<br>
 	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
 	            			</fieldset>
+  
+                                            
+                                          
+
+
+
 
 	            			<fieldset>
-	            				<h4>Te dhenat per ndermarresin <span class="step">(Hapi 2 / 7)</span></h4>
-	            				<div class="form-group">
-				                    <label for="emri_nder">Emri i Ndërmarrësit (Entiteti):</label><br>
-				                    <input type="text" name="emri_nder" class="emri_nder form-control" id="emri_nder">
-				                </div><br>
-				                <div class="form-group">
-				                    <label for="nr_biz">Numri i Regjistrimit të Biznesit:</label><br>
-				                    <input type="text" name="nr_biz" class="nr_biz form-control" id="nr_biz">
-				                </div><br>
-				                <div class="form-group">
-				                    <label for="nr_fiskal">Numri fiskal:</label><br>
-				                    <input type="text" name="nr_fiskal" class="nr_fiskal form-control" id="nr_fiskal">
-				                </div><br>
-				                <div class="form-group">
-				                    <label for="adresa">Adresa:</label><br>
-				                    <input type="text" name="adresa" class="adresa form-control" id="adresa">
-				                </div><br>
-                                <div class="form-group" >
-				                    <label for="nr_tel">Numri i Telefonit:</label><br>
-				                    <input type="text" name="nr_tel" class="nr_tel form-control" id="nr_tel">
-				                </div><br>
-                                <div class="form-group ">
-				                    <label for="nr_fax">Numri i Faksit:</label><br>
-				                    <input type="text" name="nr_fax" class="nr_fax form-control" id="nr_fax" >
-				                </div><br>
-                                 <div class="form-group">
-				                    <label for="email">Email:</label><br>
-				                    <input type="text" name="email" class="email form-control" id="email">
-				                </div>
-	            				<br>
+	            				<h4>Te dhenat per ndermarresin <span class="step">(Hapi 2 / 5)</span></h4>
+	   <div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;"type="name" name="emri_nder" class="form-control"  placeholder="Emri i Ndërmarrësit (Entiteti)">
+   
+				                    </div>
+</div>
+
+ <div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name" name="emri_nder" class="form-control"  placeholder="Numri i Regjistrimit të Biznesit">
+   
+				                    </div>
+</div>
+
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name" name="emri_nder" class="form-control"  placeholder="Numri fiskal">
+   
+				                    </div>
+</div>
+
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name" name="nr_fiskal" class="form-control"  placeholder="Numri fiskal">
+   
+				                    </div>
+</div>
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name" name="adresa" class="form-control"  placeholder="Adresa">
+   
+				                    </div>
+</div>
+
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="nr_tel" class="form-control"  placeholder="Numri i Telefonit">
+   
+				                    </div>
+</div>
+
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="nr_fax" class="form-control"  placeholder="Numri i Faksit">
+   
+				                    </div>
+</div>
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="email" class="form-control"  placeholder="Email">
+   
+				                    </div>
+</div>
+
+
 	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
 	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
 	            			</fieldset>
-
+                                          
+                                        
 	            			<fieldset>
-	            				<h4>TË DHËNAT PËR ZYRTARIN LIGJËRISHT TË PËRGJEGJËSHËM <span class="step">(Hapi 3 / 7)</span></h4>
-	            				<div class="form-group">
-				                    <label for="emri_zyrtarit">Emri i zyrtarit:</label><br>
-				                    <input type="text" name="emri_zyrtarit" class="emri_zyrtarit form-control" id="emri_zyrtarit">
-				                </div>
-				                <div class="form-group">
-				                    <label for="adresa_zyrtarit">Adresa:</label><br>
-				                    <input type="text" name="adresa_zyrtarit" class="adresa_zyrtarit form-control" id="adresa_zyrtarit">
-				                </div>
-				                <div class="form-group">
-				                    <label for="nr_tel_zyrtarit">Numri i Telefonit:</label><br>
-				                    <input type="text" name="nr_tel_zyrtarit" class="nr_tel_zyrtarit form-control" id="nr_tel_zyrtarit">
-				                </div>
-				                <div class="form-group">
-				                    <label for="nr_fax_zyrtarit">Numri i Faksit:</label><br>
-				                    <input type="text" name="nr_fax_zyrtarit" class="nr_fax_zyrtarit form-control" id="nr_fax_zyrtarit">
-				                </div>
-				                <div class="form-group">
-				                    <label for="email_zyrtarit">E-mail adresa:</label><br>
-				                    <input type="text" name="email_zyrtarit" class="email_zyrtarit form-control" id="email_zyrtarit">
-				                </div>
-				                <div class="form-group">
-				                    <label for="nr_id">Numri i ID:</label><br>
-				                    <input type="text" name="nr_id" class="nr_id form-control" id="nr_id">
-				                </div>
+	            				<h4>TË DHËNAT PËR ZYRTARIN LIGJËRISHT TË PËRGJEGJËSHËM <span class="step">(Hapi 3 / 5)</span></h4>
 
-	            				<br>
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="emri_zyrtarit" class="form-control"  placeholder="Emri i zyrtarit">
+   
+				                    </div>
+</div>
+	            				
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="adresa_zyrtarit" class="form-control"  placeholder="Adresa">
+   
+				                    </div>
+</div>
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="nr_tel_zyrtarit" class="form-control"  placeholder="Numri i Telefonit">
+   
+				                    </div>
+</div>
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="nr_fax_zyrtarit" class="form-control"  placeholder="Numri i Faksit">
+   
+				                    </div>
+</div>
+
+<div class="row">         				
+        <div class="col-md-12">
+      <input style="width:60%;  margin-top: 3%;
+    height: 80%;" type="name"  name="nr_id" class="form-control"  placeholder="Id">
+   
+				                    </div>
+</div>
+
+       	
 	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
 	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
 	            			</fieldset>
 
 	                    	<fieldset>
-	            				<h4> AKTIVITETET TË CILAT NJOFTOHEN/CREGJISTROHEN: <span class="step">(Hapi 4 / 7)</span></h4>
+
+
+	            				<h4> AKTIVITETET TË CILAT NJOFTOHEN/CREGJISTROHEN: <span class="step">(Hapi 4 / 5)</span></h4>
 	            				<div class="radio-buttons-2">
-				                	<p>Ofrimi i rrjetit publik fiks:</p>
+				                	<b>Ofrimi i rrjetit publik fiks:</b> <br>
 					                <label class="radio-inline">
 					                	<input type="radio" name="radio-buttons-2-options" value="lokal" onclick="javascript:yesnoCheck();" id="noCheck"> Lokal
 					                </label><br>
@@ -184,7 +233,7 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
 								</div>
 
                                 <div class="radio-buttons-2">
-				                	<p>Ofrimi i shërbimeve publike fikse:</p>
+				                	<b>Ofrimi i shërbimeve publike fikse:</b>
 					                <label class="radio-inline">
 					                	<input type="radio" name="radio-buttons-3-options" value="tel_lokal" onclick="javascript:yesnoCheck2();" id="noCheck2"> Shërbime telefonike lokale/nacionale
 					                </label><br>
@@ -206,7 +255,7 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
                                 </div>
                                      <br>
                                 <div class="radio-buttons-2">
-				                	<p>Ofrimi i rrjetit publik mobil:</p>
+				                	<b>Ofrimi i rrjetit publik mobil:</b><br>
 					                <label class="radio-inline">
 					                	<input type="radio" name="radio-buttons-4-options" value="mob_lokal" > Lokal
 					                </label><br>
@@ -216,7 +265,7 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
 								</div>
                                     <br>
                                     <div class="radio-buttons-2">
-				                	<p>Ofrimi i shërbimeve publike mobile:</p>
+				                	<b>Ofrimi i shërbimeve publike mobile:</b><br>
 					                <label class="radio-inline">
 					                	<input type="radio" name="radio-buttons-5-options" value="tel_ze" > Shërbime telefonike të zërit
 					                </label><br>
@@ -226,7 +275,7 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
 								</div>
 
                                     <div class="radio-buttons-2">
-				                	<p>Ofrimi i shërbimeve të linjave me qira:</p>
+				                	<b>Ofrimi i shërbimeve të linjave me qira:</b><br>
 					                <label class="radio-inline">
 					                	<input type="radio" name="radio-buttons-6-options" value="fiber_optik" > Fibër optik të pa-ndriçuar
 					                </label><br>
@@ -236,7 +285,7 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
 								</div>
                                     <br>
                                     <div class="radio-buttons-2">
-				                	<p>Ofrimi i rrjetave publike me transmetim satelitor:</p>
+				                	<b>Ofrimi i rrjetave publike me transmetim satelitor:</b>
 					                <label class="radio-inline">
 					                	<input type="radio" name="radio-buttons-7-options" value="trans_satelit" > Ofrimi i rrjetave publike me transmetim satelitor
 					                </label>
@@ -250,28 +299,106 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
 
 
 	            			<fieldset>
-	            				<h4>Përshkrimi i rrjetit dhe/ose shërbimit që do të
-                                    ofrohet: <span class="step">(Hapi 5 / 7)</span></h4>
+	            				<h4 style="	margin-top: 20px;
+margin-bottom: 30px;
+font-weight: 700;
+line-height: 26px;
+margin-right: 10;
+	">Përshkrimi i aktivitetit dhe faza e ofrimit: <br><span class="step">(Hapi 5 / 5)</span></h4>
 	            				<div class="form-group">
-                                    <div class="col-sm-6" >
+                                    
 									<label for="about-you">Të jepen përshkrime të detajuara për secilin
                                         aktivitet të njoftuar duke specifikuar:</label><br>
-				                    <label>
-                                       ● A do të përdoret rrjeti vetanak apo
-                                        ndonjë rrjet tjetër, <br>
-                                        ● Teknologjia e cila do të përdoret,<br>
-                                        ● Radio frekuencat, të cilat planifikohen
-                                        të përdoren<br>
-                                        ● Lista e shërbimeve që planifikohen të
-                                        ofrohen,<br>
-                                        ● Etj
-                                        </label>
-                                    </div>
-                                   <div class="col-sm-6" >
-									<label for="about-you"></label><br>
-				                    <textarea name="about-you" class="about-you form-control" id="about-you"></textarea>
-                                    </div>
+                                      <div class="row" >
+  <div class="col-md-10" >
+				                   <label style="position: relative;right: -2%;"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                                       A do të përdoret rrjeti vetanak apo ndonjë rrjet tjetër, <br> 
+ </label><label style="position: relative;right: 14%;"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                                        Teknologjia e cila do të përdoret,<br> 
+                                       </label><label><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                                        Radio frekuencat, të cilat planifikohen
+                                        të përdoren <br> </label><label><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                                        Lista e shërbimeve që planifikohen të ofrohen, Etj<br> </label>
+                  </div>    </div>                 
+<div class="row" >
+                                        <div class="col-md-12" >
+                                        </label> <textarea style="border: 1px solid #ccc;width: 100%;
+height: 160px; border-radius: 10px;" name="about-you" class="form-control" rows="3"></textarea>
+                                   
+                                   </div>   </div>
+									<br> <br>
+
+				                      <label class="control-label" style="position: relative;right: 80px;font-weight: bold;">Kopje e certifikatës së regjistrimit të biznesit
+</label>
+    <input id="input-6" name="input6[]" type="file" multiple class="file-loading" >
+    <script>
+    $(document).on('ready', function() {
+        $("#input-6").fileinput({
+            showUpload: false,
+            maxFileCount: 10,
+            mainClass: "input-group-lg"
+        });
+    });
+    </script>
+
+                          <label class="control-label" style="position: relative;right: 115px; font-weight: bold;">Kopje e Certifikatës së numrit fiskal
+</label>
+    <input id="input-6" name="input6[]" type="file" multiple class="file-loading" >
+    <script>
+    $(document).on('ready', function() {
+        $("#input-6").fileinput({
+            showUpload: false,
+            maxFileCount: 10,
+            mainClass: "input-group-lg"
+        });
+    });
+    </script>
+                       
+
+                                             <label class="control-label" style="position: relative;right: 80px;font-weight: bold;">Kopje e dokumentit ‘Informatë mbi biznesin
+</label>
+    <input id="input-6" name="input6[]" type="file" multiple class="file-loading" >
+    <script>
+    $(document).on('ready', function() {
+        $("#input-6").fileinput({
+            showUpload: false,
+            maxFileCount: 10,
+            mainClass: "input-group-lg"
+        });
+    });
+    </script>
+                       
+                                    
 				                </div>
+
+
+
+				                <script type="text/javascript">
+
+  function checkForm(form)
+  {
+    ...
+    if(!form.terms.checked) {
+      alert("Please indicate that you accept the Terms and Conditions");
+      form.terms.focus();
+      return false;
+    }
+    return true;
+  }
+
+</script>
+
+<form ... onsubmit="return checkForm(this);">
+...
+<p><input type="checkbox" name="terms"> Un i pranoj<u onclick="myFunction()"> Termet dhe Kushtet</u>
+<script>
+function myFunction() {
+    alert("Unë nëpërmjet këtij dokumenti deklaroj se do të ushtroj aktivitet në fushën e komunikimeve elektronike të shënuara më sipër dhe aplikoj për regjistrim në regjistrin e ofrueseve të rrjeteve dhe shërbimeve të komunikimeve elektronike të Autoritetit (ARKEP).");
+}
+</script>
+</p>
+
+</form>
 	            				<!--<br>
 	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
 	            				<button type="button" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>-->
@@ -280,6 +407,7 @@ Hyrje në aktivitetin e Komunikimeve Elektronike</h4>
 	            				<button type="button" class="btn btn-previous"><i class="fa fa-angle-left"></i> Previous</button>
 	            				<button type="submit" class="btn">Submit</button>
 	            			</fieldset>
+ </div>
 
                             <!--
 
